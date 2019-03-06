@@ -1,6 +1,6 @@
 {
   "name": "mi-consola",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Una mejor consola para Node.js",
   "main": "./index.js",
   "scripts": {
