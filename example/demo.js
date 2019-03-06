@@ -21,9 +21,9 @@ var arr = [
 console.table(arr);
 console.log('> ');
 
-for (let i = 1; i <= 10; i++) {
-  console.info(i);
-  setTimeout(function () {
-    console.info('The number is ' + i);
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+  setTimeout(() => {
+    console.log(`El numero es: ${i}`);
   }, 1000);
 }

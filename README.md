@@ -7,30 +7,78 @@
 Con NPM:
 
 ```shell
-$ npm install better-console
+$ npm i mi-consola
 ```
 
 ## Una mejor consola para Node.js
 
 
-`better-console` is a drop-in replacement for node's default console which
-gives you colors and more methods in console.
+`mi-consola` es un reemplazo directo del objeto *console* predeterminado de *NodeJS* que le brinda colores y más métodos cuando se utiliza. La parte más importante de ello, es que antes de cada *salida* imprime la fecha y hora en formato `yyyy-mm-dd h:MM:ss.l` donde se obtiene el momento exacto de ejecución de esa llamada.
 
 ## Cómo usarla
 
-You can override `console` object itself or assign better console to another variable. It's completely safe to override the native console object because better console calls native console methods for methods that are already available in it.
+Puedes sobreescribir el propio objeto `console` o asignarlo a otra variable. Es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los métodos del `console` nativo en aquellos sobre ya están disponibles en ella.
 
 ```
-var console = require('better-console');
+const console = require('mi-consola');
 
-console.log("This is a log information");
-console.warn("Warning!");
-console.info("Information");
+console.log("Esto es un log");
+console.info("Informacion");
+console.warn("Advertencia!");
+console.error("Error!");
+```
+#### Resultaría en:
+
+<span style="color:green">2019-03-06 3:47:53.924  Esto es un log</span>
+
+<span style="color:blue">2019-03-06 3:47:53.933  Informacion</span>
+
+<span style="color:yellow">2019-03-06 3:47:53.944  Advertencia!</span>
+
+<span style="color:red">2019-03-06 3:47:53.954  Error!</span>
+
+### Otro ejemplo:
+
+```
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+  setTimeout(() => {
+    console.log(`El numero es: ${i}`);
+  }, 1000);
+}
+```
+
+#### Resultaría en:
+
+<span style="color:green">2019-03-06 3:55:53.506  1</span>
+
+<span style="color:green">2019-03-06 3:55:53.507  2</span>
+
+<span style="color:green">2019-03-06 3:55:53.507  3</span>
+
+<span style="color:green">2019-03-06 3:55:53.508  4</span>
+
+<span style="color:green">2019-03-06 3:55:53.509  5</span>
+
+<span style="color:green">2019-03-06 3:55:54.507  El numero es: 1</span>
+
+<span style="color:green">2019-03-06 3:55:54.510  El numero es: 2</span>
+
+<span style="color:green">2019-03-06 3:55:54.510  El numero es: 3</span>
+
+<span style="color:green">2019-03-06 3:55:54.511  El numero es: 4</span>
+
+<span style="color:green">2019-03-06 3:55:54.512  El numero es: 5</span>
+
+
+
+### Otros usos:
+
+```
 console.table([ [1,2], [3,4] ]);
 console.time("Timer");
 console.timeEnd("Timer");
 console.dir(myObject);
-
 ```
 
 ## Methods
