@@ -17,7 +17,7 @@ $ npm i mi-consola
 
 ## Cómo usarla
 
-Puedes sobreescribir el propio objeto `console` o asignarlo a otra variable. Es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los métodos del `console` nativo en aquellos sobre ya están disponibles en ella.
+Puedes sobreescribir el propio objeto `console` o asignarlo a otra variable. Es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los métodos del `console` nativo sobre los que ya están disponibles en él.
 
 ```
 const console = require('mi-consola');
