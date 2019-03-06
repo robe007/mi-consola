@@ -1,0 +1,30 @@
+{
+  "name": "mi-consola",
+  "version": "1.0.0",
+  "description": "Una mejor consola para Node.js",
+  "main": "./index.js",
+  "scripts": {
+    "demo": "node example/demo.js",
+    "test": "node test/test.js"
+  },
+  "directories": {
+    "lib": "./lib/miconsola",
+    "example": "./example/demo",
+    "test": "./test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robe007/mi-consola"
+  },
+  "keywords": [
+    "console",
+    "consola"
+  ],
+  "author": "Roberto Carlos",
+  "license": "BSD",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "chalk": "^2.4.1",
+    "cli-table": "^0.3.1"
+  }
+}
