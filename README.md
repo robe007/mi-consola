@@ -1,22 +1,22 @@
-# Better Console
+# Mi-Consola
 
 ![Screenshot](https://i.imgur.com/iyuNj6Z.png)
 
-## Installation
+## Instalación
 
-Use NPM
+Con NPM:
 
 ```shell
 $ npm install better-console
 ```
 
-## A better console for Node.js
+## Una mejor consola para Node.js
 
 
 `better-console` is a drop-in replacement for node's default console which
 gives you colors and more methods in console.
 
-## How to use it
+## Cómo usarla
 
 You can override `console` object itself or assign better console to another variable. It's completely safe to override the native console object because better console calls native console methods for methods that are already available in it.
 
