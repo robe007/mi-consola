@@ -1,4 +1,4 @@
-# Mi-Consola Jhoelazooooo
+# Mi-Consola
 
 ![Screenshot](https://i.imgur.com/iyuNj6Z.png)
 
