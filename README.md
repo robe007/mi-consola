@@ -1,4 +1,4 @@
-# Mi-Consola
+# Mi-Consola Jhoelazooooo
 
 ![Screenshot](https://i.imgur.com/iyuNj6Z.png)
 
@@ -10,14 +10,14 @@ Con NPM:
 $ npm i mi-consola
 ```
 
-## Una mejor consola para Node.js
+## Método `console` mejorado para Node.js
 
 
 `mi-consola` es un reemplazo directo del objeto *console* predeterminado de *NodeJS* que le brinda colores y más métodos cuando se utiliza. La parte más importante de ello, es que antes de cada *salida* imprime la fecha y hora en formato `yyyy-mm-dd h:MM:ss.l` ([ ver aquí ](https://www.npmjs.com/package/dateformat#mask-options)) donde se obtiene el momento exacto de ejecución de esa llamada.
 
 ## Cómo usarla
 
-Puedes sobreescribir el propio objeto `console` o asignarlo a otra variable. Es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los métodos del `console` nativo sobre los que ya están disponibles en él.
+Se puede sobreescribir el propio objeto `console` o asignarlo a otra variable. De hecho, es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los mismos métodos nativos , es decir, los que ya están disponibles en el objeto.
 
 ```js
 const console = require('mi-consola');
