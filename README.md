@@ -19,7 +19,7 @@ $ npm i mi-consola
 
 Puedes sobreescribir el propio objeto `console` o asignarlo a otra variable. Es completamente seguro anular el objeto `console` nativo porque `mi-consola` llama a los métodos del `console` nativo sobre los que ya están disponibles en él.
 
-```
+```js
 const console = require('mi-consola');
 
 console.log("Esto es un log");
@@ -27,19 +27,14 @@ console.info("Informacion");
 console.warn("Advertencia!");
 console.error("Error!");
 ```
+
 #### Resultaría en:
 
-<span style="color:green">2019-03-06 3:47:53.924  Esto es un log</span>
-
-<span style="color:blue">2019-03-06 3:47:53.933  Informacion</span>
-
-<span style="color:yellow">2019-03-06 3:47:53.944  Advertencia!</span>
-
-<span style="color:red">2019-03-06 3:47:53.954  Error!</span>
+![Screenshot](https://i.imgur.com/ecUCIDO.png)
 
 ### Otro ejemplo:
 
-```
+```js
 for (let i = 1; i <= 5; i++) {
   console.log(i);
   setTimeout(() => {
@@ -50,31 +45,11 @@ for (let i = 1; i <= 5; i++) {
 
 #### Resultaría en:
 
-<span style="color:green">2019-03-06 3:55:53.506  1</span>
-
-<span style="color:green">2019-03-06 3:55:53.507  2</span>
-
-<span style="color:green">2019-03-06 3:55:53.507  3</span>
-
-<span style="color:green">2019-03-06 3:55:53.508  4</span>
-
-<span style="color:green">2019-03-06 3:55:53.509  5</span>
-
-<span style="color:green">2019-03-06 3:55:54.507  El numero es: 1</span>
-
-<span style="color:green">2019-03-06 3:55:54.510  El numero es: 2</span>
-
-<span style="color:green">2019-03-06 3:55:54.510  El numero es: 3</span>
-
-<span style="color:green">2019-03-06 3:55:54.511  El numero es: 4</span>
-
-<span style="color:green">2019-03-06 3:55:54.512  El numero es: 5</span>
-
-
+![Screenshot](https://i.imgur.com/QcqFjXB.png)
 
 ### Otros usos:
 
-```
+```js
 console.table([ [1,2], [3,4] ]);
 console.time("Timer");
 console.timeEnd("Timer");
